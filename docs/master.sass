@@ -1,6 +1,8 @@
 @font-face
-  font-family: monofonto
-  src: url(./monofonto.ttf)
+  font-family: 'monofonto'
+  src: url('./font/monofonto-webfont.woff2') format('woff2'), url('./font/monofonto-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
 
 /*=== Auxiliary =======================*/
 $golden-ratio: 1.61803398875
@@ -33,7 +35,7 @@ $background-color: white
 body
   font-size: $font-size
   line-height: 32px
-  font-family: monofonto, monospace
+  font-family: 'monofonto', monospace
   max-width: 100%
   overflow-x: hidden
   background-color: $background-color
