@@ -1,0 +1,66 @@
+@font-face
+  font-family: monofonto
+  src: url(./monofonto.ttf)
+
+/*=== Auxiliary =======================*/
+$golden-ratio: 1.61803398875
+
+$f: 100%
+
+$s: $golden-ratio*10px
+
+$font-size: 18px
+$font-size-heading:  $font-size*$golden-ratio
+
+$g: #16FF42
+$gb: 1px solid $g
+
+$border-color: #EEEEEE
+
+$border: 1px solid $border-color
+$box-shadow: 0px 0px 5px $border-color
+$background-color: white
+
+/*=== Basic ===========================*/
+*
+  box-sizing: border-box
+  max-width: 100%
+  margin: 0
+  padding: 0
+  font-size: $font-size
+  font-weight: normal
+
+body
+  font-size: $font-size
+  line-height: 32px
+  font-family: monofonto, monospace
+  max-width: 100%
+  overflow-x: hidden
+  background-color: $background-color
+main
+  width: 100%
+  margin: auto
+  max-width: 1024px
+
+/*=== Page Layout =====================*/
+header, footer
+  text-align: center
+  margin: $s auto
+  text-transform: uppercase
+h2
+  font-weight: bold
+  text-transform: uppercase
+
+.row
+  border-left: $s/4 solid black
+  display: flex
+  padding-left: $s/2
+  .cell
+    &--left
+      width: $f/4
+    &--middle
+      width: $f/4
+    &--right
+      width: $f/2
+  &--dim
+    color: lightgray
