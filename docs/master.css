@@ -1,0 +1,61 @@
+@font-face {
+  font-family: monofonto;
+  src: url(./monofonto.ttf);
+}
+/*=== Auxiliary =======================*/
+/*=== Basic ===========================*/
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+body {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: monofonto, monospace;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  max-width: 1024px;
+}
+
+/*=== Page Layout =====================*/
+header, footer {
+  text-align: center;
+  margin: 16.1803398875px auto;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.row {
+  border-left: 4.0450849719px solid black;
+  display: flex;
+  padding-left: 8.0901699438px;
+}
+.row .cell--left {
+  width: 25%;
+}
+.row .cell--middle {
+  width: 25%;
+}
+.row .cell--right {
+  width: 50%;
+}
+.row--dim {
+  color: lightgray;
+}
+
+/*# sourceMappingURL=master.css.map */
